@@ -13,9 +13,9 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 
-from portable_guide import GuideManager  # noqa: E402
-from portable_guide.env import load_env  # noqa: E402
-from portable_guide.llm.fake import FakeLLMClient  # noqa: E402
+from manager import GuideManager  # noqa: E402
+from env import load_env  # noqa: E402
+from llm.fake import FakeLLMClient  # noqa: E402
 
 
 async def main() -> None:

@@ -1,11 +1,10 @@
 """
 Portable Guided Learning (Guide) blueprint.
 
-Copy the whole `portable_guide/` folder into another project to implement
-guided learning using only the content inside this folder.
+Clone this repo and use it as the root module (no extra folder required).
 """
 
-from .manager import GuideManager
+from manager import GuideManager
 
 __all__ = ["GuideManager"]
 

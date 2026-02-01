@@ -9,7 +9,7 @@ try:
     import yaml
 except ImportError as e:  # pragma: no cover
     raise ImportError(
-        "portable_guide requires PyYAML to load prompts. Install with: pip install pyyaml"
+        "guide_learning requires PyYAML to load prompts. Install with: pip install pyyaml"
     ) from e
 
 

@@ -3,8 +3,8 @@ from __future__ import annotations
 import logging
 from typing import Any
 
-from ..llm.base import LLMClient, LLMError, Message
-from ..prompting import PromptBundle, PromptLoader
+from llm.base import LLMClient, LLMError, Message
+from prompting import PromptBundle, PromptLoader
 
 
 class BaseAgent:
@@ -33,7 +33,7 @@ class BaseAgent:
         self.model = model
         self.temperature = temperature
         self.max_tokens = max_tokens
-        self.logger = logger or logging.getLogger(f"portable_guide.{agent_name}")
+        self.logger = logger or logging.getLogger(f"guide_learning.{agent_name}")
 
     def prompts(self) -> PromptBundle:
         return self.prompt_loader.load(self.agent_name, self.language)

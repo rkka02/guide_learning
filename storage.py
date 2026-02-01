@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from .models import GuideSession
+from models import GuideSession
 
 
 class FileSessionStore:

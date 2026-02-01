@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import Any
 
-from .base import BaseAgent
-from ..models import GuideMessage, KnowledgePoint
+from agents.base import BaseAgent
+from models import GuideMessage, KnowledgePoint
 
 
 class ChatAgent(BaseAgent):

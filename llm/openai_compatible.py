@@ -5,8 +5,8 @@ from typing import Any, Sequence
 
 import httpx
 
-from .base import LLMClient, LLMError, Message
-from ..env import load_env
+from llm.base import LLMClient, LLMError, Message
+from env import load_env
 
 
 class OpenAICompatibleClient(LLMClient):

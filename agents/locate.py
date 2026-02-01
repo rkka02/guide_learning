@@ -3,8 +3,8 @@ from __future__ import annotations
 import json
 from typing import Any
 
-from .base import BaseAgent
-from ..models import KnowledgePoint, LearningRecord
+from agents.base import BaseAgent
+from models import KnowledgePoint, LearningRecord
 
 
 class LocateAgent(BaseAgent):

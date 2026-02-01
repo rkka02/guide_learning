@@ -5,8 +5,8 @@ import json
 import re
 from typing import Any
 
-from .base import BaseAgent
-from ..models import KnowledgePoint
+from agents.base import BaseAgent
+from models import KnowledgePoint
 
 
 class InteractiveAgent(BaseAgent):

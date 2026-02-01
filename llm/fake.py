@@ -4,7 +4,7 @@ import json
 import re
 from typing import Any, Callable, Sequence
 
-from .base import Message
+from llm.base import Message
 
 
 Responder = Callable[[Sequence[Message], str], str]

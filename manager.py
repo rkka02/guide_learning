@@ -6,11 +6,11 @@ import time
 import uuid
 from typing import Any
 
-from .agents import ChatAgent, InteractiveAgent, LocateAgent, SummaryAgent
-from .llm.base import LLMClient
-from .models import GuideMessage, GuideSession, KnowledgePoint, LearningRecord
-from .prompting import PromptLoader
-from .storage import FileSessionStore
+from agents import ChatAgent, InteractiveAgent, LocateAgent, SummaryAgent
+from llm.base import LLMClient
+from models import GuideMessage, GuideSession, KnowledgePoint, LearningRecord
+from prompting import PromptLoader
+from storage import FileSessionStore
 
 
 class GuideManager:
@@ -32,7 +32,7 @@ class GuideManager:
         max_tokens: int = 8000,
         logger: logging.Logger | None = None,
     ):
-        self.logger = logger or logging.getLogger("portable_guide.GuideManager")
+        self.logger = logger or logging.getLogger("guide_learning.GuideManager")
 
         self.language = language
         self.model = model
